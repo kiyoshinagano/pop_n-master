@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link href="bingo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="bingo.js"></script>
+<title>BINGO!!</title>
+</head>
+<STYLE type="text/css">
+<!--
+BODY {
+background-image: url("001.jpg");
+background-repeat: no-repeat;/* 背景を繰り返さない */
+background-position: 50% 0%;/* 背景画像の位置は画面中央 */
+background-attachment:fixed;/* 背景画像を固定する */
+}
+</STYLE>
+<body STYLE="overflow: hidden;">
+<section style="text-align:center;">
+<div style="position:absolute; top:140px; left:0; right:0;">
+<input type="image" img src="button01.jpg" id="start" name="start" onclick="startBingo()"></input>
+<input type="image" img src="button02.jpg" id="stop" name="stop" onclick="stopBingo()"></input>
+</div>
+<div id="view" style="position:absolute; top:180px; left:0; right:0; font-family:Arial Black; font-size:200px; color:#ff0000;"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<table align="center" width="1000px" height="400px">
+<tr align="center"><th valign="top">
+<div id="out" style="text-align:center; font-size:40px;"></div>
+</th></tr>
+</table>
+
+</section>
+</body>
+</html>
